@@ -63,7 +63,7 @@ export function Dashboard() {
         
         {/* CARDS DE DESTAQUE (KPIs Atuais) */}
         <Grid container spacing={2} sx={{ mb: 3 }}>
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Card sx={{ borderLeft: '5px solid #f44336' }}>
               <CardContent>
                 <Typography color="textSecondary" variant="caption" sx={{ fontWeight: 'bold' }}>TEMP. MASSA GRÃOS</Typography>
@@ -74,7 +74,7 @@ export function Dashboard() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Card sx={{ borderLeft: '5px solid #2196f3' }}>
               <CardContent>
                 <Typography color="textSecondary" variant="caption" sx={{ fontWeight: 'bold' }}>UMIDADE DE SAÍDA</Typography>
@@ -85,7 +85,7 @@ export function Dashboard() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Card sx={{ borderLeft: '5px solid #4caf50' }}>
               <CardContent>
                 <Typography color="textSecondary" variant="caption" sx={{ fontWeight: 'bold' }}>PRODUTIVIDADE</Typography>
@@ -96,7 +96,7 @@ export function Dashboard() {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={6} md={3}>
+          <Grid xs={12} sm={6} md={3}>
             <Card sx={{ borderLeft: '5px solid #ff9800' }}>
               <CardContent>
                 <Typography color="textSecondary" variant="caption" sx={{ fontWeight: 'bold' }}>SISTEMA GÁS</Typography>
@@ -111,7 +111,7 @@ export function Dashboard() {
 
         <Grid container spacing={3}>
           {/* GRÁFICO DE TENDÊNCIA */}
-          <Grid item xs={12} lg={8}>
+          <Grid xs={12} lg={8}>
             <Paper sx={{ p: 3, borderRadius: 2, height: 450 }}>
               <Typography variant="h6" gutterBottom sx={{ color: '#1a237e', fontWeight: 'bold' }}>Tendência de Secagem</Typography>
               <ResponsiveContainer width="100%" height="90%">
@@ -130,7 +130,7 @@ export function Dashboard() {
           </Grid>
 
           {/* STATUS MECÂNICO RÁPIDO */}
-          <Grid item xs={12} lg={4}>
+          <Grid xs={12} lg={4}>
             <Paper sx={{ p: 3, borderRadius: 2, height: 450 }}>
               <Typography variant="h6" gutterBottom sx={{ color: '#1a237e', fontWeight: 'bold' }}>Status Mecânico</Typography>
               <Divider sx={{ mb: 2 }} />
@@ -153,7 +153,7 @@ export function Dashboard() {
           </Grid>
 
           {/* TABELA DETALHADA */}
-          <Grid item xs={12}>
+          <Grid xs={12}>
             <TableContainer component={Paper} sx={{ borderRadius: 2 }}>
               <Box sx={{ p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center', bgcolor: '#f8f9fa' }}>
                 <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Histórico Completo de Telemetria</Typography>

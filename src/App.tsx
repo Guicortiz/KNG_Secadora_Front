@@ -3,9 +3,10 @@ import { AuthProvider, AuthContext } from './contexts/AuthContext';
 import { useContext } from 'react';
 import { Login } from './pages/Login';
 import { Dashboard } from './pages/Dashboard';
+import React from 'react';
 
 // Componente para proteger rotas privadas
-function PrivateRoute({ children }: { children: JSX.Element }) {
+function PrivateRoute({ children }: { children: React.ReactNode }) {
   const { signed } = useContext(AuthContext);
   return signed ? children : <Navigate to="/" />;
 }
