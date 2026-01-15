@@ -8,14 +8,9 @@
     "moduleResolution": "bundler",
     "types": ["node"],
     "skipLibCheck": true,
-    
-    /* Configurações para referências de projeto */
-    "noEmit": false, 
-    "allowImportingTsExtensions": false,
-    
-    /* Reduzindo a rigidez para o deploy passar */
+    "noEmit": false,
     "strict": false,
-    "verbatimModuleSyntax": false
+    "allowSyntheticDefaultImports": true
   },
   "include": ["vite.config.ts"]
 }
